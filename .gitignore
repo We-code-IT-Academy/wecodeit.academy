@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project privates:
+db.sqlite3*
+
+# pycharm
+.idea
+
+# Media
+media
+
+# collected statics
+django-sites/static
+
+# mac os
+.DS_Store
