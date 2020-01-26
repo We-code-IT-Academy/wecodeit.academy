@@ -38,6 +38,9 @@ class BlogPage(Page):
     ]
 
 
+#################### Good till here #######################################
+# The following code is kinda dead and needs love - Authors don't work yet:
+#################### ############## #######################################
 class BlogAuthorsOrderable(Orderable):
     """This allows us to select one or more blog authors from Snippets."""
 
