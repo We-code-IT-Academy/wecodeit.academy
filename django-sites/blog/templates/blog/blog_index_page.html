@@ -7,24 +7,24 @@
 {% block subheadline %}- ein Tech-Blog{% endblock %}
 
 {% block content %}
-   <div class="row">
     {% for post in page.get_children.live.public %}
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="{% pageurl post %}">
-            <h2 class="post-title">
-              {{ post.title }}
-            </h2>
-            <h3 class="post-subtitle">
-              {{ post.specific.intro }}
-            </h3>
-          </a>
-          <!-- doesnt work yet - needs fixing:
-          <p class="post-meta">Posted on {{ post.date }}</p>
-          -->
-        </div>
+       <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+              <a href="{% pageurl post %}">
+                <h2 class="post-title">
+                  {{ post.title }}
+                </h2>
+                <h3 class="post-subtitle">
+                  {{ post.specific.intro }}
+                </h3>
+              </a>
+              <!-- doesnt work yet - needs fixing:
+              <p class="post-meta">Posted on {{ post.date }}</p>
+              -->
+            </div>
+          </div>
+        <hr>
       </div>
     {% endfor %}
-    <hr>
-  </div>
 {% endblock %}
