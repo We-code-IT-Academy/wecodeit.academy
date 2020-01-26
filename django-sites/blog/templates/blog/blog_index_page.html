@@ -8,7 +8,7 @@
 
 {% block content %}
    <div class="row">
-    {% for post in page.get_children %}
+    {% for post in page.get_children.live %}
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
           <a href="{% pageurl post %}">
