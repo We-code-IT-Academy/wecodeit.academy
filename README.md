@@ -15,7 +15,7 @@ pip install -r requirements.txt
 python3 django-sites/manage.py migrate
 
 # create a super user
-python manage.py createsuperuser
+python3 django-sites/manage.py createsuperuser
 
 # start the dev server
 python3 django-sites/manage.py runserver 
